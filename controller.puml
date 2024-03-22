@@ -1,0 +1,52 @@
+@startuml
+annotation java.lang.Override
+class controller.GameController
+class controller.JFrame
+class controller.Main
+class java.awt.event.ActionEvent
+class java.awt.event.ActionListener
+class java.net.MalformedURLException
+class java.net.URL
+class java.sql.Connection
+class java.sql.PreparedStatement
+class java.sql.SQLException
+class java.util.Random
+class java.util.logging.Level
+class java.util.logging.Logger
+class model.JDBC
+class model.Matrix
+class utils.Utils
+class view.MenuView
+class view.PauseMenuView
+class view.PauseMenuView.PauseMenuListener
+class view.Pikachu
+class view.PlayGameView
+class view.ResultView
+class view.ResultView.ResultListener
+class view.SplashView
+controller.GameController ..> java.lang.Override
+controller.GameController --|> controller.JFrame
+controller.GameController ..> java.awt.event.ActionEvent
+controller.GameController ..> java.awt.event.ActionListener
+controller.GameController ..> java.sql.Connection
+controller.GameController ..> java.sql.PreparedStatement
+controller.GameController ..> java.sql.SQLException
+controller.GameController ..> java.util.Random
+controller.GameController ..> java.util.logging.Level
+controller.GameController ..> java.util.logging.Logger
+controller.GameController ..> model.JDBC
+controller.GameController ..> model.Matrix
+controller.GameController ..> utils.Utils
+controller.GameController ..> view.MenuView
+controller.GameController ..> view.PauseMenuView
+controller.GameController ..> view.PauseMenuView.PauseMenuListener
+controller.GameController ..> view.Pikachu
+controller.GameController ..> view.PlayGameView
+controller.GameController ..> view.ResultView
+controller.GameController ..> view.ResultView.ResultListener
+controller.GameController ..> view.SplashView
+controller.Main ..> controller.GameController
+controller.Main ..> java.net.MalformedURLException
+controller.Main ..> java.net.URL
+controller.Main ..> utils.Utils
+@enduml
